@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class HelperController extends Controller
 {
     public function splitting(){
-        return splitName("Mohammad Saadaldeen");
+        return splitName("Mohammad Alsalamat");
     }
 }
