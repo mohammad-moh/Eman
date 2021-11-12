@@ -6,6 +6,7 @@ use App\Http\Controllers\docPatController;
 use App\Http\Controllers\EmanController;
 use App\Http\Controllers\gefUserController;
 use App\Http\Controllers\gittController;
+use App\Http\Controllers\HelperController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\houseController;
 use App\Http\Controllers\LoginController;
@@ -106,3 +107,5 @@ Route::get('/person-id/{id}', [PersoneController::class, 'GetEleById'])->name('g
 Route::get('/get-eman', [EmanController::class, 'getAllEle']);
 Route::get('/get-one/{id}', [EmanController::class, 'getOne'])->name('get.one');
 Route::get('/delete-raw/{id}', [EmanController::class, 'deleteItem'])->name('raw.delete');
+
+Route::get('/get-split-name', [HelperController::class, 'splitting']);
